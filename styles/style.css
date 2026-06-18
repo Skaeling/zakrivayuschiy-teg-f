@@ -11,6 +11,79 @@
 */
 
 .page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--main-font), sans-serif;
+  font-variation-settings: "wght" var(--wght-text), "slnt" 0;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: var(--gradient);
+  color: var(--text-color)
 }
+
+.header {
+  min-block-size: 368px;
+  background-color: #fff;
+  font-family: var(--accent-font), sans-serif;
+  text-transform: uppercase;
+  border: 2px solid var(--text-color);
+  margin-top: 100px;
+  padding-top: var(--header-padding-top);
+  text-align: center;
+}
+
+.content-width {
+  inline-size: var(--content-width)
+
+}
+
+.logo {
+  font-size: var(--logo-font-size)
+}
+
+.title {
+  padding-top: 20px;
+  font-size: var(--title-font-size)
+}
+
+.cards__list{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.cards__list-item {
+  border: 2px solid var(--text-color);
+  background-color: var(--card-background);
+  font-size: var(--card-font-size)
+
+}
+
+.card__title {
+  font-size: var(--card-font-size);
+  font-variation-settings: "wght" var(--wght-title), "slnt" 0;
+  padding: 4px 10px;
+
+}
+
+.card__image {
+  background-image: url(../images/car.png);
+  width: 100%;
+  height: 696px;
+  background-size: cover;
+}
+
+.card__text {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  gap: 25px;
+
+}
+
+
+
