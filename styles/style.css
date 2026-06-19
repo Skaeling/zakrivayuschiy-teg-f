@@ -18,11 +18,13 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--main-font), sans-serif;
-  font-variation-settings: "wght" var(--wght-text), "slnt" 0;
+  font-variation-settings:
+    "wght" var(--wght-text),
+    "slnt" 0;
   background-size: cover;
   background-attachment: fixed;
-  background-image: var(--gradient);
-  color: var(--text-color)
+  background-image: var(--background-gradient);
+  color: var(--text-color);
 }
 
 .header {
@@ -37,20 +39,19 @@
 }
 
 .content-width {
-  inline-size: var(--content-width)
-
+  inline-size: var(--content-width);
 }
 
 .logo {
-  font-size: var(--logo-font-size)
+  font-size: var(--logo-font-size);
 }
 
 .title {
   padding-top: 20px;
-  font-size: var(--title-font-size)
+  font-size: var(--title-font-size);
 }
 
-.cards__list{
+.cards__list {
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -59,23 +60,24 @@
 .cards__list-item {
   border: 2px solid var(--text-color);
   background-color: var(--card-background);
-  font-size: var(--card-font-size)
-
+  font-size: var(--card-font-size);
 }
 
 .card__title {
   font-size: var(--card-font-size);
-  font-variation-settings: "wght" var(--wght-title), "slnt" 0;
+  font-variation-settings:
+    "wght" var(--wght-title),
+    "slnt" 0;
   padding: 4px 10px;
-
 }
 
-.card__image {
+.image__wrapper {
   position: relative;
-  background-image: url(../images/car.png);
-  width: 100%;
-  height: 696px;
-  background-size: cover;
+}
+
+.car {
+  width: clamp(371px, 256.56px + 30.52vw, 696px);
+  height: auto;
 }
 
 .card__watermark {
@@ -89,17 +91,20 @@
   right: 25px;
   mix-blend-mode: hard-light;
   text-shadow:
-  -1px 0 var(--shadow-color), 
-  0 1px var(--shadow-color), 
-  1px 0 var(--shadow-color), 
-  0 -1px var(--shadow-color);
+    -1px 0 var(--shadow-color),
+    0 1px var(--shadow-color),
+    1px 0 var(--shadow-color),
+    0 -1px var(--shadow-color);
 }
 
-@supports ((text-stroke: 1px var(--shadow-color)) or (-webkit-text-stroke: 1px var(--shadow-color))) {
+@supports (
+  (text-stroke: 1px var(--shadow-color)) or
+    (-webkit-text-stroke: 1px var(--shadow-color))
+) {
 
   .card__watermark {
     -webkit-text-stroke: 1px var(--shadow-color);
-    text-stroke: 1px var(--shadow-color); 
+    text-stroke: 1px var(--shadow-color);
     text-shadow: none;
   }
 }
@@ -109,7 +114,6 @@
   flex-direction: column;
   padding: 25px;
   gap: 25px;
-
 }
 
 .card__buttons {
@@ -118,21 +122,23 @@
   padding-bottom: 19px;
   /* padding-bottom: 25px; */
   padding-right: 25px;
+}
+
+.main__buttons {
+  font-size: var(--card-button-font-size);
+  font-family: var(--accent-font);
+  font-weight: 400;
+  border: 2px solid var(--text-color);
+  background-color: transparent;
   cursor: pointer;
 }
 
 .card__like-button {
   block-size: 38px;
   inline-size: 130px;
-  font-size: var(--card-button-font-size);
-  font-family: var(--accent-font);
-  font-weight: 400;
-  border: 2px solid var(--text-color);
-  background-color: transparent;
 }
 
 .card__icon-button {
-  background-color: transparent;
   border: none;
 }
 
@@ -141,27 +147,46 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* padding: 50px; */ 
+  /* padding: 50px; */
   padding: 45px;
-
-
 }
 
 .save-button {
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* justify-self: center; */
-  font-family: var(--accent-font);
-  font-size: var(--card-button-font-size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
   width: clamp(306px, 295.79px + 2.72vw, 335px);
   height: clamp(55px, 94.21px - 2.72vw, 84px);
-  border: 2px solid var(--text-color);
-
+  background-color: var(--card-background);
 }
-/* ✦ like-icon — для svg-иконки анимированного сердца
-✦ card__like-button — для кнопки Like рядом с иконкой
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
-✦ button__text — для обозначения текстового элемента внутри кнопки */
+
+dialog {
+  display: none;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  border: 2px solid var(--text-color);
+  inline-size: 350px;
+  font-family: var(--accent-font), sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  height: 191px;
+  padding: 30px;
+  text-transform: uppercase;
+  gap: 30px 20px;
+  overflow: hidden;
+}
+
+.ok-button {
+  inline-size: 293px;
+  block-size: 38px;
+  grid-column: 2 / -3;
+}
+
+dialog[open]::backdrop {
+  background-color: var(--veil-color);
+}
+
+dialog[open] {
+  display: grid;
+}
