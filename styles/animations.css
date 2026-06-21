@@ -19,15 +19,14 @@
   to {
     transform: scale(1.25);
   }
-
 }
 
 @keyframes sparking {
-  
+
   from {
     opacity: 0;
   }
-  
+
   to {
     opacity: 1;
   }

@@ -26,5 +26,4 @@
   --animation-main-body-color: transparent;
   --animation-fill-color: red;
   --image-size: clamp(371px, 256.56px + 30.52vw, 696px);
-
 }

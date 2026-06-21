@@ -18,7 +18,7 @@
       <span class="header__logo">&lt;/html&gt;</span>
       <h1 class="title">закрывающий тег</h1>
     </header>
-    <main class="content-width">
+    <main class="content content-width">
       <!-- список карточек > -->
       <ul class="cards__list">
         <li class="cards__list-item">
@@ -53,23 +53,28 @@
                 fill="none"
                 viewBox="0 0 39 36"
               >
-                  <g class="heart">
-                  <path class="contour"
+                <g class="heart">
+                  <path
+                    class="contour"
                     fill="var(--animation-contour-color)"
                     d="M12 6H9v3h3zm3 0h-3v3h3zM9 9H6v3h3zm0 3H6v3h3zm0 3H6v3h3zm9-9h-3v3h3zm-6 12H9v3h3zm3 3h-3v3h3zm3 3h-3v3h3zm9-18h3v3h-3zm-3 0h3v3h-3zm6 3h3v3h-3zm0 3h3v3h-3zm0 3h3v3h-3zm-9-9h3v3h-3zm6 12h3v3h-3zm-3 3h3v3h-3zm-3 3h3v3h-3zm0 3h-3v3h3zm0-18h-3v3h3z"
                   />
-                  <path class="main-body"
+                  <path
+                    class="main-body"
                     fill="var(--animation-main-body-color)"
                     d="M12 9H9v3h3zm3 3h-3v3h3zm3-3h-3v3h3zm-6 6H9v3h3zm3 0h-3v3h3zm0 3h-3v3h3zm3-6h-3v3h3zm0 9h-3v3h3zm0-3h-3v3h3zm9-9h3v3h-3zm-3 0h3v3h-3zm3 3h3v3h-3zm-3 0h3v3h-3zm-3-3h3v3h-3zm6 6h3v3h-3zm-3 0h3v3h-3zm0 3h3v3h-3zm-3-6h3v3h-3zm0 9h3v3h-3zm0-3h3v3h-3zm0 3h-3v3h3zm0 3h-3v3h3z"
                   />
-                  <path class="core"
+                  <path
+                    class="core"
                     fill="var(--animation-core-color)"
                     d="M18 15h-3v3h3zm3 0h3v3h-3zm0 0h-3v3h3zm0-3h-3v3h3zm0 6h-3v3h3z"
-                  /></g>
-                  <path class="sparks"
-                    fill="var(--animation-fill-color)"
-                    d="M36 13h3v3h-3zm-9 14h3v3h-3zm-9 6h3v3h-3zm-9-6h3v3H9zM24 0h3v3h-3zm9 3h3v3h-3zM3 3h3v3H3zm9-3h3v3h-3zM0 13h3v3H0z"
                   />
+                </g>
+                <path
+                  class="sparks"
+                  fill="var(--animation-fill-color)"
+                  d="M36 13h3v3h-3zm-9 14h3v3h-3zm-9 6h3v3h-3zm-9-6h3v3H9zM24 0h3v3h-3zm9 3h3v3h-3zM3 3h3v3H3zm9-3h3v3h-3zM0 13h3v3H0z"
+                />
               </svg>
             </button>
             <button class="main__buttons card__like-button">
@@ -84,7 +89,7 @@
               >&lt;/html&gt;</span
             >
             <img
-              class="card__image"
+              class="card__image filter__blur"
               src="./images/car.png"
               alt="Изображение дома на колесах"
             />
@@ -110,22 +115,27 @@
                 viewBox="0 0 39 36"
               >
                 <g class="heart">
-                  <path class="contour"
+                  <path
+                    class="contour"
                     fill="var(--animation-contour-color)"
                     d="M12 6H9v3h3zm3 0h-3v3h3zM9 9H6v3h3zm0 3H6v3h3zm0 3H6v3h3zm9-9h-3v3h3zm-6 12H9v3h3zm3 3h-3v3h3zm3 3h-3v3h3zm9-18h3v3h-3zm-3 0h3v3h-3zm6 3h3v3h-3zm0 3h3v3h-3zm0 3h3v3h-3zm-9-9h3v3h-3zm6 12h3v3h-3zm-3 3h3v3h-3zm-3 3h3v3h-3zm0 3h-3v3h3zm0-18h-3v3h3z"
                   />
-                  <path class="main-body"
+                  <path
+                    class="main-body"
                     fill="var(--animation-main-body-color)"
                     d="M12 9H9v3h3zm3 3h-3v3h3zm3-3h-3v3h3zm-6 6H9v3h3zm3 0h-3v3h3zm0 3h-3v3h3zm3-6h-3v3h3zm0 9h-3v3h3zm0-3h-3v3h3zm9-9h3v3h-3zm-3 0h3v3h-3zm3 3h3v3h-3zm-3 0h3v3h-3zm-3-3h3v3h-3zm6 6h3v3h-3zm-3 0h3v3h-3zm0 3h3v3h-3zm-3-6h3v3h-3zm0 9h3v3h-3zm0-3h3v3h-3zm0 3h-3v3h3zm0 3h-3v3h3z"
                   />
-                  <path class="core"
+                  <path
+                    class="core"
                     fill="var(--animation-core-color)"
                     d="M18 15h-3v3h3zm3 0h3v3h-3zm0 0h-3v3h3zm0-3h-3v3h3zm0 6h-3v3h3z"
-                  /></g>
-                  <path class="sparks"
-                    fill="var(--animation-fill-color)"
-                    d="M36 13h3v3h-3zm-9 14h3v3h-3zm-9 6h3v3h-3zm-9-6h3v3H9zM24 0h3v3h-3zm9 3h3v3h-3zM3 3h3v3H3zm9-3h3v3h-3zM0 13h3v3H0z"
                   />
+                </g>
+                <path
+                  class="sparks"
+                  fill="var(--animation-fill-color)"
+                  d="M36 13h3v3h-3zm-9 14h3v3h-3zm-9 6h3v3h-3zm-9-6h3v3H9zM24 0h3v3h-3zm9 3h3v3h-3zM3 3h3v3H3zm9-3h3v3h-3zM0 13h3v3H0z"
+                />
               </svg>
             </button>
             <button class="main__buttons card__like-button">
@@ -140,7 +150,7 @@
               >&lt;/html&gt;</span
             >
             <img
-              class="card__image"
+              class="card__image filter__sepia"
               src="./images/car.png"
               alt="Изображение дома на колесах"
             />
@@ -164,22 +174,27 @@
                 viewBox="0 0 39 36"
               >
                 <g class="heart">
-                  <path class="contour"
+                  <path
+                    class="contour"
                     fill="var(--animation-contour-color)"
                     d="M12 6H9v3h3zm3 0h-3v3h3zM9 9H6v3h3zm0 3H6v3h3zm0 3H6v3h3zm9-9h-3v3h3zm-6 12H9v3h3zm3 3h-3v3h3zm3 3h-3v3h3zm9-18h3v3h-3zm-3 0h3v3h-3zm6 3h3v3h-3zm0 3h3v3h-3zm0 3h3v3h-3zm-9-9h3v3h-3zm6 12h3v3h-3zm-3 3h3v3h-3zm-3 3h3v3h-3zm0 3h-3v3h3zm0-18h-3v3h3z"
                   />
-                  <path class="main-body"
+                  <path
+                    class="main-body"
                     fill="var(--animation-main-body-color)"
                     d="M12 9H9v3h3zm3 3h-3v3h3zm3-3h-3v3h3zm-6 6H9v3h3zm3 0h-3v3h3zm0 3h-3v3h3zm3-6h-3v3h3zm0 9h-3v3h3zm0-3h-3v3h3zm9-9h3v3h-3zm-3 0h3v3h-3zm3 3h3v3h-3zm-3 0h3v3h-3zm-3-3h3v3h-3zm6 6h3v3h-3zm-3 0h3v3h-3zm0 3h3v3h-3zm-3-6h3v3h-3zm0 9h3v3h-3zm0-3h3v3h-3zm0 3h-3v3h3zm0 3h-3v3h3z"
                   />
-                  <path class="core"
+                  <path
+                    class="core"
                     fill="var(--animation-core-color)"
                     d="M18 15h-3v3h3zm3 0h3v3h-3zm0 0h-3v3h3zm0-3h-3v3h3zm0 6h-3v3h3z"
-                  /></g>
-                  <path class="sparks"
-                    fill="var(--animation-fill-color)"
-                    d="M36 13h3v3h-3zm-9 14h3v3h-3zm-9 6h3v3h-3zm-9-6h3v3H9zM24 0h3v3h-3zm9 3h3v3h-3zM3 3h3v3H3zm9-3h3v3h-3zM0 13h3v3H0z"
                   />
+                </g>
+                <path
+                  class="sparks"
+                  fill="var(--animation-fill-color)"
+                  d="M36 13h3v3h-3zm-9 14h3v3h-3zm-9 6h3v3h-3zm-9-6h3v3H9zM24 0h3v3h-3zm9 3h3v3h-3zM3 3h3v3H3zm9-3h3v3h-3zM0 13h3v3H0z"
+                />
               </svg>
             </button>
             <button class="main__buttons card__like-button">
@@ -194,7 +209,7 @@
               >&lt;/html&gt;</span
             >
             <img
-              class="card__image"
+              class="card__image filter__hue"
               src="./images/car.png"
               alt="Изображение дома на колесах"
             />
@@ -220,22 +235,27 @@
                 viewBox="0 0 39 36"
               >
                 <g class="heart">
-                  <path class="contour"
+                  <path
+                    class="contour"
                     fill="var(--animation-contour-color)"
                     d="M12 6H9v3h3zm3 0h-3v3h3zM9 9H6v3h3zm0 3H6v3h3zm0 3H6v3h3zm9-9h-3v3h3zm-6 12H9v3h3zm3 3h-3v3h3zm3 3h-3v3h3zm9-18h3v3h-3zm-3 0h3v3h-3zm6 3h3v3h-3zm0 3h3v3h-3zm0 3h3v3h-3zm-9-9h3v3h-3zm6 12h3v3h-3zm-3 3h3v3h-3zm-3 3h3v3h-3zm0 3h-3v3h3zm0-18h-3v3h3z"
                   />
-                  <path class="main-body"
+                  <path
+                    class="main-body"
                     fill="var(--animation-main-body-color)"
                     d="M12 9H9v3h3zm3 3h-3v3h3zm3-3h-3v3h3zm-6 6H9v3h3zm3 0h-3v3h3zm0 3h-3v3h3zm3-6h-3v3h3zm0 9h-3v3h3zm0-3h-3v3h3zm9-9h3v3h-3zm-3 0h3v3h-3zm3 3h3v3h-3zm-3 0h3v3h-3zm-3-3h3v3h-3zm6 6h3v3h-3zm-3 0h3v3h-3zm0 3h3v3h-3zm-3-6h3v3h-3zm0 9h3v3h-3zm0-3h3v3h-3zm0 3h-3v3h3zm0 3h-3v3h3z"
                   />
-                  <path class="core"
+                  <path
+                    class="core"
                     fill="var(--animation-core-color)"
                     d="M18 15h-3v3h3zm3 0h3v3h-3zm0 0h-3v3h3zm0-3h-3v3h3zm0 6h-3v3h3z"
-                  /></g>
-                  <path class="sparks"
-                    fill="var(--animation-fill-color)"
-                    d="M36 13h3v3h-3zm-9 14h3v3h-3zm-9 6h3v3h-3zm-9-6h3v3H9zM24 0h3v3h-3zm9 3h3v3h-3zM3 3h3v3H3zm9-3h3v3h-3zM0 13h3v3H0z"
                   />
+                </g>
+                <path
+                  class="sparks"
+                  fill="var(--animation-fill-color)"
+                  d="M36 13h3v3h-3zm-9 14h3v3h-3zm-9 6h3v3h-3zm-9-6h3v3H9zM24 0h3v3h-3zm9 3h3v3h-3zM3 3h3v3H3zm9-3h3v3h-3zM0 13h3v3H0z"
+                />
               </svg>
             </button>
             <button class="main__buttons card__like-button">
@@ -250,7 +270,7 @@
               >&lt;/html&gt;</span
             >
             <img
-              class="card__image"
+              class="card__image filter__invert"
               src="./images/car.png"
               alt="Изображение дома на колесах"
             />
@@ -277,22 +297,27 @@
                 viewBox="0 0 39 36"
               >
                 <g class="heart">
-                  <path class="contour"
+                  <path
+                    class="contour"
                     fill="var(--animation-contour-color)"
                     d="M12 6H9v3h3zm3 0h-3v3h3zM9 9H6v3h3zm0 3H6v3h3zm0 3H6v3h3zm9-9h-3v3h3zm-6 12H9v3h3zm3 3h-3v3h3zm3 3h-3v3h3zm9-18h3v3h-3zm-3 0h3v3h-3zm6 3h3v3h-3zm0 3h3v3h-3zm0 3h3v3h-3zm-9-9h3v3h-3zm6 12h3v3h-3zm-3 3h3v3h-3zm-3 3h3v3h-3zm0 3h-3v3h3zm0-18h-3v3h3z"
                   />
-                  <path class="main-body"
+                  <path
+                    class="main-body"
                     fill="var(--animation-main-body-color)"
                     d="M12 9H9v3h3zm3 3h-3v3h3zm3-3h-3v3h3zm-6 6H9v3h3zm3 0h-3v3h3zm0 3h-3v3h3zm3-6h-3v3h3zm0 9h-3v3h3zm0-3h-3v3h3zm9-9h3v3h-3zm-3 0h3v3h-3zm3 3h3v3h-3zm-3 0h3v3h-3zm-3-3h3v3h-3zm6 6h3v3h-3zm-3 0h3v3h-3zm0 3h3v3h-3zm-3-6h3v3h-3zm0 9h3v3h-3zm0-3h3v3h-3zm0 3h-3v3h3zm0 3h-3v3h3z"
                   />
-                  <path class="core"
+                  <path
+                    class="core"
                     fill="var(--animation-core-color)"
                     d="M18 15h-3v3h3zm3 0h3v3h-3zm0 0h-3v3h3zm0-3h-3v3h3zm0 6h-3v3h3z"
-                  /></g>
-                  <path class="sparks"
-                    fill="var(--animation-fill-color)"
-                    d="M36 13h3v3h-3zm-9 14h3v3h-3zm-9 6h3v3h-3zm-9-6h3v3H9zM24 0h3v3h-3zm9 3h3v3h-3zM3 3h3v3H3zm9-3h3v3h-3zM0 13h3v3H0z"
                   />
+                </g>
+                <path
+                  class="sparks"
+                  fill="var(--animation-fill-color)"
+                  d="M36 13h3v3h-3zm-9 14h3v3h-3zm-9 6h3v3h-3zm-9-6h3v3H9zM24 0h3v3h-3zm9 3h3v3h-3zM3 3h3v3H3zm9-3h3v3h-3zM0 13h3v3H0z"
+                />
               </svg>
             </button>
             <button class="main__buttons card__like-button">
@@ -307,7 +332,7 @@
               >&lt;/html&gt;</span
             >
             <img
-              class="card__image"
+              class="card__image filter__brightness"
               src="./images/car.png"
               alt="Изображение дома на колесах"
             />
@@ -331,22 +356,27 @@
                 viewBox="0 0 39 36"
               >
                 <g class="heart">
-                  <path class="contour"
+                  <path
+                    class="contour"
                     fill="var(--animation-contour-color)"
                     d="M12 6H9v3h3zm3 0h-3v3h3zM9 9H6v3h3zm0 3H6v3h3zm0 3H6v3h3zm9-9h-3v3h3zm-6 12H9v3h3zm3 3h-3v3h3zm3 3h-3v3h3zm9-18h3v3h-3zm-3 0h3v3h-3zm6 3h3v3h-3zm0 3h3v3h-3zm0 3h3v3h-3zm-9-9h3v3h-3zm6 12h3v3h-3zm-3 3h3v3h-3zm-3 3h3v3h-3zm0 3h-3v3h3zm0-18h-3v3h3z"
                   />
-                  <path class="main-body"
+                  <path
+                    class="main-body"
                     fill="var(--animation-main-body-color)"
                     d="M12 9H9v3h3zm3 3h-3v3h3zm3-3h-3v3h3zm-6 6H9v3h3zm3 0h-3v3h3zm0 3h-3v3h3zm3-6h-3v3h3zm0 9h-3v3h3zm0-3h-3v3h3zm9-9h3v3h-3zm-3 0h3v3h-3zm3 3h3v3h-3zm-3 0h3v3h-3zm-3-3h3v3h-3zm6 6h3v3h-3zm-3 0h3v3h-3zm0 3h3v3h-3zm-3-6h3v3h-3zm0 9h3v3h-3zm0-3h3v3h-3zm0 3h-3v3h3zm0 3h-3v3h3z"
                   />
-                  <path class="core"
+                  <path
+                    class="core"
                     fill="var(--animation-core-color)"
                     d="M18 15h-3v3h3zm3 0h3v3h-3zm0 0h-3v3h3zm0-3h-3v3h3zm0 6h-3v3h3z"
-                  /></g>
-                  <path class="sparks"
-                    fill="var(--animation-fill-color)"
-                    d="M36 13h3v3h-3zm-9 14h3v3h-3zm-9 6h3v3h-3zm-9-6h3v3H9zM24 0h3v3h-3zm9 3h3v3h-3zM3 3h3v3H3zm9-3h3v3h-3zM0 13h3v3H0z"
                   />
+                </g>
+                <path
+                  class="sparks"
+                  fill="var(--animation-fill-color)"
+                  d="M36 13h3v3h-3zm-9 14h3v3h-3zm-9 6h3v3h-3zm-9-6h3v3H9zM24 0h3v3h-3zm9 3h3v3h-3zM3 3h3v3H3zm9-3h3v3h-3zM0 13h3v3H0z"
+                />
               </svg>
             </button>
             <button class="main__buttons card__like-button">
@@ -361,7 +391,7 @@
               >&lt;/html&gt;</span
             >
             <img
-              class="card__image"
+              class="card__image filter__saturate"
               src="./images/car.png"
               alt="Изображение дома на колесах"
             />
@@ -387,22 +417,27 @@
                 viewBox="0 0 39 36"
               >
                 <g class="heart">
-                  <path class="contour"
+                  <path
+                    class="contour"
                     fill="var(--animation-contour-color)"
                     d="M12 6H9v3h3zm3 0h-3v3h3zM9 9H6v3h3zm0 3H6v3h3zm0 3H6v3h3zm9-9h-3v3h3zm-6 12H9v3h3zm3 3h-3v3h3zm3 3h-3v3h3zm9-18h3v3h-3zm-3 0h3v3h-3zm6 3h3v3h-3zm0 3h3v3h-3zm0 3h3v3h-3zm-9-9h3v3h-3zm6 12h3v3h-3zm-3 3h3v3h-3zm-3 3h3v3h-3zm0 3h-3v3h3zm0-18h-3v3h3z"
                   />
-                  <path class="main-body"
+                  <path
+                    class="main-body"
                     fill="var(--animation-main-body-color)"
                     d="M12 9H9v3h3zm3 3h-3v3h3zm3-3h-3v3h3zm-6 6H9v3h3zm3 0h-3v3h3zm0 3h-3v3h3zm3-6h-3v3h3zm0 9h-3v3h3zm0-3h-3v3h3zm9-9h3v3h-3zm-3 0h3v3h-3zm3 3h3v3h-3zm-3 0h3v3h-3zm-3-3h3v3h-3zm6 6h3v3h-3zm-3 0h3v3h-3zm0 3h3v3h-3zm-3-6h3v3h-3zm0 9h3v3h-3zm0-3h3v3h-3zm0 3h-3v3h3zm0 3h-3v3h3z"
                   />
-                  <path class="core"
+                  <path
+                    class="core"
                     fill="var(--animation-core-color)"
                     d="M18 15h-3v3h3zm3 0h3v3h-3zm0 0h-3v3h3zm0-3h-3v3h3zm0 6h-3v3h3z"
-                  /></g>
-                  <path class="sparks"
-                    fill="var(--animation-fill-color)"
-                    d="M36 13h3v3h-3zm-9 14h3v3h-3zm-9 6h3v3h-3zm-9-6h3v3H9zM24 0h3v3h-3zm9 3h3v3h-3zM3 3h3v3H3zm9-3h3v3h-3zM0 13h3v3H0z"
                   />
+                </g>
+                <path
+                  class="sparks"
+                  fill="var(--animation-fill-color)"
+                  d="M36 13h3v3h-3zm-9 14h3v3h-3zm-9 6h3v3h-3zm-9-6h3v3H9zM24 0h3v3h-3zm9 3h3v3h-3zM3 3h3v3H3zm9-3h3v3h-3zM0 13h3v3H0z"
+                />
               </svg>
             </button>
             <button class="main__buttons card__like-button">
@@ -417,7 +452,7 @@
               >&lt;/html&gt;</span
             >
             <img
-              class="card__image"
+              class="card__image filter__multiple"
               src="./images/car.png"
               alt="Изображение дома на колесах"
             />
@@ -447,22 +482,27 @@
                 viewBox="0 0 39 36"
               >
                 <g class="heart">
-                  <path class="contour"
+                  <path
+                    class="contour"
                     fill="var(--animation-contour-color)"
                     d="M12 6H9v3h3zm3 0h-3v3h3zM9 9H6v3h3zm0 3H6v3h3zm0 3H6v3h3zm9-9h-3v3h3zm-6 12H9v3h3zm3 3h-3v3h3zm3 3h-3v3h3zm9-18h3v3h-3zm-3 0h3v3h-3zm6 3h3v3h-3zm0 3h3v3h-3zm0 3h3v3h-3zm-9-9h3v3h-3zm6 12h3v3h-3zm-3 3h3v3h-3zm-3 3h3v3h-3zm0 3h-3v3h3zm0-18h-3v3h3z"
                   />
-                  <path class="main-body"
+                  <path
+                    class="main-body"
                     fill="var(--animation-main-body-color)"
                     d="M12 9H9v3h3zm3 3h-3v3h3zm3-3h-3v3h3zm-6 6H9v3h3zm3 0h-3v3h3zm0 3h-3v3h3zm3-6h-3v3h3zm0 9h-3v3h3zm0-3h-3v3h3zm9-9h3v3h-3zm-3 0h3v3h-3zm3 3h3v3h-3zm-3 0h3v3h-3zm-3-3h3v3h-3zm6 6h3v3h-3zm-3 0h3v3h-3zm0 3h3v3h-3zm-3-6h3v3h-3zm0 9h3v3h-3zm0-3h3v3h-3zm0 3h-3v3h3zm0 3h-3v3h3z"
                   />
-                  <path class="core"
+                  <path
+                    class="core"
                     fill="var(--animation-core-color)"
                     d="M18 15h-3v3h3zm3 0h3v3h-3zm0 0h-3v3h3zm0-3h-3v3h3zm0 6h-3v3h3z"
-                  /></g>
-                  <path class="sparks"
-                    fill="var(--animation-fill-color)"
-                    d="M36 13h3v3h-3zm-9 14h3v3h-3zm-9 6h3v3h-3zm-9-6h3v3H9zM24 0h3v3h-3zm9 3h3v3h-3zM3 3h3v3H3zm9-3h3v3h-3zM0 13h3v3H0z"
                   />
+                </g>
+                <path
+                  class="sparks"
+                  fill="var(--animation-fill-color)"
+                  d="M36 13h3v3h-3zm-9 14h3v3h-3zm-9 6h3v3h-3zm-9-6h3v3H9zM24 0h3v3h-3zm9 3h3v3h-3zM3 3h3v3H3zm9-3h3v3h-3zM0 13h3v3H0z"
+                />
               </svg>
             </button>
             <button class="main__buttons card__like-button">
@@ -473,33 +513,33 @@
       </ul>
 
       <!-- кнопка и диалог> -->
-      <div class="buttons__section">
+      <div>
         <button
           type="button"
           class="main__buttons save-button"
           onclick="window['save-dialog'].showModal()"
           aria-controls="save-dialog"
         >
-            <svg class="floppy-icon" width="21" height="21">
-              <use href="./svg/floppy.svg#floppy"></use>
-            </svg>
-            <span class="button__text">Сохранить на память</span>
+          <svg class="floppy-icon" width="21" height="21">
+            <use href="./svg/floppy.svg#floppy"></use>
+          </svg>
+          <span class="button__text">Сохранить на память</span>
         </button>
-      </div>
 
-      <dialog id="save-dialog">
-        <svg class="floppy-icon" width="39" height="39">
-          <use href="./svg/floppy.svg#floppy"></use>
-        </svg>
-        <span class="button__text">Вставьте дискету, чтобы продолжить</span>
-        <button
-          type="button"
-          onclick="window['save-dialog'].close()"
-          class="main__buttons save-button ok-button"
-        >
-          <span class="button__text">ок</span>
-        </button>
-      </dialog>
+        <dialog id="save-dialog">
+          <svg class="floppy-icon" width="39" height="39">
+            <use href="./svg/floppy.svg#floppy"></use>
+          </svg>
+          <span class="button__text">Вставьте дискету, чтобы продолжить</span>
+          <button
+            type="button"
+            onclick="window['save-dialog'].close()"
+            class="main__buttons save-button ok-button"
+          >
+            <span class="button__text">ок</span>
+          </button>
+        </dialog>
+      </div>
     </main>
     <script src="./scripts/like.js"></script>
   </body>
