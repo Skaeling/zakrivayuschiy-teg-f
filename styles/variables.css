@@ -5,18 +5,20 @@
   --accent-font: "PressStart2P";
   --wght-title: 715;
   --wght-text: 410;
-  --background-gradient:
+  --bg-color: #fff;
+  --bg-gradient:
     repeating-linear-gradient(to right, #d3d3d3, transparent 2px),
     repeating-linear-gradient(to bottom, #d3d3d3, transparent 2px),
     linear-gradient(to bottom, #e7e7e7 0% 0.01%, #1a1a1a);
   --text-color: rgb(0 0 0);
   --card-font-size: 18px;
-  --card-background: #fff;
+  --card-bg-color: #fff;
   --header-padding: clamp(120px, 117.18px + 0.75vw, 128px);
   --content-width: clamp(375px, 260.56px + 30.52vw, 700px);
   --logo-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   --title-font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   --card-button-font-size: 14px;
+  --button-text-color: #fff;
   --shadow-color: #fff;
-  --veil-color: rgba(0 0 0 / 0.25);
+  --veil-color: rgba(0 0 0 / 0.75);
 }
