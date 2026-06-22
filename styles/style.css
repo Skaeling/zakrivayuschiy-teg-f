@@ -89,6 +89,7 @@
 
 .card__watermark {
   position: absolute;
+  z-index: 1;
   font-family: var(--accent-font);
   font-size: 14px;
   color: var(--accent-color);
@@ -117,11 +118,11 @@
 }
 
 .filter__blur {
-  filter: blur(7px);
+  filter: blur(1px);
 }
 
-.filter__sepia {
-  filter: sepia(100%);
+.filter__brightness {
+  filter: brightness(87%);
 }
 
 .filter__hue {
@@ -129,11 +130,11 @@
 }
 
 .filter__invert {
-  filter: invert(29%);
+  filter: invert(10%);
 }
 
-.filter__brightness {
-  filter: brightness(70%);
+.filter__sepia {
+  filter: sepia(100%);
 }
 
 .filter__saturate {
@@ -141,7 +142,7 @@
 }
 
 .filter__multiple {
-  filter: sepia(1) contrast(2) brightness(200%);
+  filter: blur(1px) contrast(1) brightness(176%);
 }
 
 .card__text {
